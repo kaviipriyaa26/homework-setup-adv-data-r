@@ -1,0 +1,51 @@
+---
+title: "STAT40830 Homework - 01"
+author: "Kavi Priya Mathimaran"
+format: html
+editor: visual
+---
+
+## Home Work 01
+
+Advance Data Programming with R - Online STAT40830
+
+### *Introduction*
+
+*AIRQUALITY IN NEW YORK DURING 1973*
+
+The airquality dataset is a built-in R dataset that contains daily air quality measurements in New York from May to September 1973. It includes variables like temperature, wind speed, solar radiation, and ozone levels.
+
+```{r}
+#| echo: false
+# Load required dataset
+data("airquality")
+# Remove rows with missing values for plotting
+data <- na.omit(airquality)
+# View first few rows of the dataset
+head(airquality)
+```
+
+### *Plotting*
+
+```{r}
+#| echo: false
+# Scatterplot of Ozone vs Temperature
+plot(data$Temp, data$Ozone,
+     main = "Ozone Levels vs Temperature",
+     xlab = "Temperature (°F)",
+     ylab = "Ozone (ppb)",
+     pch = 19,
+     col = "purple")
+```
+
+#### *Description*
+
+This scatter-plot shows the relationship between the temperature and the ozone levels:
+
+-   The x-axis represents temperature in Fahrenheit (F).
+
+-   The y-axis shows ozone concentration in parts per billion (ppb).
+
+-   Each dot in the plot corresponds to a day’s recorded values.
+
+From the plot, we observe that higher temperatures tend to be associated with higher ozone levels, though there is variation due to other environmental factors.
