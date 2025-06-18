@@ -5,7 +5,7 @@ format: html
 editor: visual
 ---
 
-## Home Work 01
+## Home Work 01 - "Updated for Git setup"
 
 Advance Data Programming with R - Online STAT40830
 
@@ -35,7 +35,7 @@ plot(data$Temp, data$Ozone,
      xlab = "Temperature (°F)",
      ylab = "Ozone (ppb)",
      pch = 19,
-     col = "purple")
+     col = "yellow")
 ```
 
 #### *Description*
